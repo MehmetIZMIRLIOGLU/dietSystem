@@ -8,6 +8,7 @@ public class dietician extends JFrame
     {
         setTitle("Dietician Screen");
         setSize(250,250);
+        setResizable(false);
         setLocationRelativeTo(null);
 
         JFrame frame = this;

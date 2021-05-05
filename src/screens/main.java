@@ -14,6 +14,7 @@ public class main extends JFrame
     {
         setTitle("Main Screen");
         setSize(250,100);
+        setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(2,1));

@@ -8,6 +8,7 @@ public class customer extends JFrame
     {
         setTitle("Customer Screen");
         setSize(250,250);
+        setResizable(false);
         setLocationRelativeTo(null);
 
         JFrame frame = this;
