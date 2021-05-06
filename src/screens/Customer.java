@@ -2,11 +2,11 @@ package screens;
 
 import javax.swing.*;
 
-public class dietician extends JFrame
+public class Customer extends JFrame
 {
-    public dietician()
+    public Customer()
     {
-        setTitle("Dietician Screen");
+        setTitle("Customer Screen");
         setSize(250,250);
         setResizable(false);
         setLocationRelativeTo(null);
@@ -19,7 +19,7 @@ public class dietician extends JFrame
                         "Are you sure you want to close this window?", "Close Window?",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION){
-                    new main().setVisible(true);
+                    new Main().setVisible(true);
                 }
             }
         });
