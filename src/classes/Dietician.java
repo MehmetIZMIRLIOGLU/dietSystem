@@ -73,4 +73,10 @@ public class Dietician
     {
         Customers.remove(customer);
     }
+
+    @Override
+    public String toString()
+    {
+        return name + " " + surname;
+    }
 }

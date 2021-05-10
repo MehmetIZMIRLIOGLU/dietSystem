@@ -15,10 +15,12 @@ public class Main extends JFrame
     JButton dietician;
     JButton customer;
     JFrame customerLoginFrame;
+    JFrame dieticianLoginFrame;
 
     public Main()
     {
         customerLoginFrame = customerLogin();
+        dieticianLoginFrame = dieticianLogin();
         setTitle("Main Screen");
         setSize(250,150);
         setResizable(false);
@@ -40,8 +42,8 @@ public class Main extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                dispose();
-                new Dietician().setVisible(true);
+                setVisible(false);
+                dieticianLoginFrame.setVisible(true);
             }
         });
 
@@ -99,6 +101,49 @@ public class Main extends JFrame
             {
                 frame.setVisible(false);
                 customerRegisterFrame.setVisible(true);
+            }
+        });
+
+        frame.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                frame.setVisible(false);
+                setVisible(true);
+            }
+        });
+        return frame;
+    }
+
+    private JFrame dieticianLogin()
+    {
+        JFrame frame = new JFrame();
+        frame.setTitle("Dietician Login");
+        frame.setSize(250,150);
+        frame.setResizable(false);
+        frame.setLocationRelativeTo(null);
+        frame.setLayout(new GridLayout(3,1));
+        frame.getRootPane().setBorder(new EmptyBorder(10,10,10,10));
+
+        JComboBox<classes.Dietician> dieticianJComboBox = new JComboBox<classes.Dietician>();
+        for(int i=0; i < Storage.getDieticians().size(); i++)
+        {
+            dieticianJComboBox.addItem(Storage.getDieticians().get(i));
+        }
+        frame.add(dieticianJComboBox);
+
+        JButton loginBtn = new JButton("Login");
+
+        frame.add(loginBtn);
+
+        loginBtn.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                Storage.currentDietician = (classes.Dietician)dieticianJComboBox.getSelectedItem();
+                frame.setVisible(false);
+                dispose();
+                new Dietician().setVisible(true);
             }
         });
 
