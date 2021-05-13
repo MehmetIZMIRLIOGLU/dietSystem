@@ -1,27 +1,29 @@
 package screens;
 
-import javax.swing.*;
+import classes.Storage;
+import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
-public class Dietician extends JFrame
+public class Dietician extends Application
 {
-    public Dietician()
+    @Override
+    public void start(Stage stage)
     {
-        setTitle("Dietician Screen");
-        setSize(250,250);
-        setResizable(false);
-        setLocationRelativeTo(null);
+        StackPane root = new StackPane();
+        stage.setTitle("Dietician Screen");
+        stage.setResizable(false);
+        stage.setScene(new Scene(root, 400, 400));
 
-        JFrame frame = this;
-        frame.addWindowListener(new java.awt.event.WindowAdapter() {
-            @Override
-            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
-                if (JOptionPane.showConfirmDialog(frame,
-                        "Are you sure you want to close this window?", "Close Window?",
-                        JOptionPane.YES_NO_OPTION,
-                        JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION){
-                    new Main().setVisible(true);
-                }
-            }
+        root.getChildren().add(new Label(Storage.currentDietician.toString()));
+
+        stage.setOnHiding( event -> {
+            stage.hide();
+            Platform.runLater(() -> new Main().start(new Stage()));
         });
+        stage.show();
     }
 }
