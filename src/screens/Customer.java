@@ -94,6 +94,7 @@ public class Customer extends Application
         StackPane.setMargin(comboBoxFoodList,new Insets(260,0,0,0));
 
         TextArea foodDetails = new TextArea();
+        foodDetails.setDisable(true);
         root.getChildren().add(foodDetails);
         StackPane.setAlignment(foodDetails, Pos.TOP_LEFT);
         StackPane.setMargin(foodDetails,new Insets(300,0,0,0));
