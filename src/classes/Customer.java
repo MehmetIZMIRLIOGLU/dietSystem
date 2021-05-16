@@ -10,7 +10,9 @@ public class Customer
     private Genders gender;
     private Packages pack;
     private Dietician dietician;
+    private FoodList foodList;
     private String address;
+    private int ranked = 0;
 
     public Customer(String name, String surname, int birth_year, double weight, double height, Genders gender, Packages pack, String address)
     {
@@ -112,6 +114,26 @@ public class Customer
     public void setAddress(String address)
     {
         this.address = address;
+    }
+
+    public int getRanked()
+    {
+        return ranked;
+    }
+
+    public void setRanked(int ranked)
+    {
+        this.ranked = ranked;
+    }
+
+    public FoodList getFoodList()
+    {
+        return foodList;
+    }
+
+    public void setFoodList(FoodList foodList)
+    {
+        this.foodList = foodList;
     }
 
     @Override

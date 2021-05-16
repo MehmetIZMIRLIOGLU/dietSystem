@@ -9,6 +9,9 @@ public class Dietician
     private int birth_year;
     private Genders gender;
     private ArrayList<Customer> Customers;
+    private int ranked_sum;
+    private int ranked_person;
+    private double rank_avg;
 
     public Dietician(String name, String surname, int birth_year, Genders gender)
     {
@@ -72,6 +75,26 @@ public class Dietician
     public void deleteCustomer(Customer customer)
     {
         Customers.remove(customer);
+    }
+
+    public double addRank(int rank)
+    {
+        if(rank < 1 || rank > 5)
+            return rank_avg;
+        ranked_sum += rank;
+        ranked_person++;
+        rank_avg = (double)ranked_sum/(double)ranked_person;
+        return rank_avg;
+    }
+
+    public String getRank_avg()
+    {
+        return getRankAvg() + " (" + ranked_person + ")";
+    }
+
+    public double getRankAvg()
+    {
+        return rank_avg;
     }
 
     @Override
