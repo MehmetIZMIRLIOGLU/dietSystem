@@ -16,8 +16,8 @@ This project is coded in Java software language and JavaFX library.
 
 ## 1.3	Data Structures
 Two data structures are used in this project:
-Binary Search Tree: To categorize dietitians according to their score 
-Linked List: To define food list.
+- Binary Search Tree: To categorize dietitians according to their score 
+- Linked List: To define food list.
 
 ## 1.4	Work Partitioning
 ```markdown
