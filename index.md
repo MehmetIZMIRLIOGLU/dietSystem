@@ -76,12 +76,12 @@ Linked List: To define food list.
 ![image](https://user-images.githubusercontent.com/17067941/119067721-55a10080-b9eb-11eb-99ce-852dfe3b6c6e.png)
 
 ## 3.2	Github Repository
-https://github.com/MehmetIZMIRLIOGLU/dietSystem
+[https://github.com/MehmetIZMIRLIOGLU/dietSystem](https://github.com/MehmetIZMIRLIOGLU/dietSystem)
 
 # 4	Conclusion/Summary
 In this project, we establish connection between dietitians and people who want to adopt healthy lifestyle by using JavaFX. Two data structures are used in project. Firstly, linked list is appropriate for defining food list. Secondly binary search tree is used for sorting dietitians according to their score. These scores are specified by other customers. Dietitians prepare a food list for 7 days or 30 days. It can be change as to customer driven.
 
 # 5	References
-•	JavaFX Documentation - https://fxdocs.github.io/docs/html5/
-•	JavaFX Official Web Site – https://openjfx.io/
+-	JavaFX Documentation - https://fxdocs.github.io/docs/html5/
+-	JavaFX Official Web Site – https://openjfx.io/
 
