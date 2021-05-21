@@ -3,11 +3,9 @@
 ![image](https://user-images.githubusercontent.com/17067941/119066760-29848000-b9e9-11eb-8749-5c4684a7f46a.png)
 
 # Contributors
-Tüvana Yeni, [@tuvanayeni](https://github.com/tuvanayeni)
-
-Mehmet İzmirlioğlu, [@mehmetizmirlioglu](https://github.com/mehmetizmirlioglu)
-
-Volkan Gürgör, [@vgurgor](https://github.com/vgurgor)
+- Tüvana Yeni, [@tuvanayeni](https://github.com/tuvanayeni)
+- Mehmet İzmirlioğlu, [@mehmetizmirlioglu](https://github.com/mehmetizmirlioglu)
+- Volkan Gürgör, [@vgurgor](https://github.com/vgurgor)
 
 # 1	Introduction
 ## 1.1	Purpose/Project Proposal
