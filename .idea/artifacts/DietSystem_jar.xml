@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DietSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DietSystem_jar</output-path>
+    <root id="archive" name="DietSystem.jar">
+      <element id="module-output" name="DietSystem" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/controlsfx-11.1.0.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/javafx.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libdecora_sse.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libfxplugins.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libglass.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libglib-lite.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libgstreamer-lite.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libjavafx_font.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libjavafx_iio.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libjfxmedia_avf.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libjfxmedia.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libprism_common.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libprism_es2.dylib" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/javafx/libprism_sw.dylib" />
+    </root>
+  </artifact>
+</component>
